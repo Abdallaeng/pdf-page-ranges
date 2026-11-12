@@ -19,6 +19,17 @@ npm i pdf-page-ranges
 > npm i github:Abdallaeng/pdf-page-ranges
 > ```
 
+### Use it in the browser (no install)
+
+The built ES module is served free by jsDelivr straight from this repository:
+
+```html
+<script type="module">
+  import { parsePageRanges } from "https://cdn.jsdelivr.net/gh/Abdallaeng/pdf-page-ranges@v1.0.0/dist/index.js";
+  console.log(parsePageRanges("1-3, 5, 8-", 10).pages); // [1, 2, 3, 5, 8, 9, 10]
+</script>
+```
+
 ## Grammar
 
 ```
